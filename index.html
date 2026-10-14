@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Really Sorry ❤️</title>
+    <title>Me perdoa, Marianinha? ❤️</title>
     <style>
         * {
             margin: 0;
@@ -269,10 +269,10 @@
     <div class="bg-heart" style="top: 20%; left: 50%; animation-delay: 8s;">💝</div>
 
     <div class="container">
-        <div id="mainText">I'm really sorry ❤️<br>Please forgive me 🥺</div>
+        <div id="mainText">Eu fui um bobão ❤️<br>Por favor, me perdoa 🥺</div>
         <div class="buttons">
-            <button id="yesBtn">Okay baby, I forgive you 💖</button>
-            <button id="noBtn">No, I'm still angry 😠</button>
+            <button id="yesBtn">Ok amorzinho, eu te perdôo 💖</button>
+            <button id="noBtn">Não, eu ainda tô brava 😠</button>
         </div>
         <div id="clickCount"></div>
         <div id="emojiContainer" class="hidden"></div>
@@ -287,21 +287,21 @@
         const buttonsContainer = document.querySelector('.buttons');
 
         const sorryMessages = [
-            "I'm really sorry ❤️<br>Please forgive me 🥺",
-            "I promise I'll never do it again 😢💕",
-            "You mean the world to me 🌍💖",
-            "I can't stop thinking about how sorry I am 😭",
-            "Please give me another chance 🙏❤️",
-            "I'll do anything to make it up to you 💝",
-            "You're the most important person to me 🥰",
-            "I messed up, but I love you so much 💕😔",
-            "Life isn't the same without your smile 😢💖",
-            "I promise to be better for you 🌟❤️",
-            "Forgive me please? I'll buy you ice cream 🍦💕",
-            "I'm so so so sorry baby 😭❤️",
-            "You deserve the world and I'll give it to you 🌹💖",
-            "Pretty please with a cherry on top? 🍒🥺",
-            "I'll never let you down again, I promise 💍❤️"
+            "Me desculpa de verdade ❤️<br>Por favor, me perdoa 🥺",
+            "Prometo que nunca mais vou fazer isso 😢💕",
+            "Você é tudo pra mim 🌍💖",
+            "Não consigo parar de pensar no quanto sinto muito 😭",
+            "Por favor, me dá mais uma chance 🙏❤️",
+            "Faço qualquer coisa pra compensar o que fiz 💝",
+            "Você é a pessoa mais importante pra mim 🥰",
+            "Eu errei, mas te amo demais 💕😔",
+            "A vida não é a mesma sem o seu sorriso 😢💖",
+            "Prometo ser melhor por você 🌟❤️",
+            "Me perdoa, vai? Eu te pago um sorvete 🍦💕",
+            "Me desculpa, meu amor, de verdade 😭❤️",
+            "Você merece o mundo, e eu vou te dar ele 🌹💖",
+            "Por favooor, com uma cerejinha em cima? 🍒🥺",
+            "Prometo que nunca mais vou te decepcionar, meu amor 💍❤️"
         ];
 
         let currentMessageIndex = 0;
@@ -406,11 +406,11 @@
                 setTimeout(() => mainText.classList.remove('shake'), 500);
                 
                 if (noClickCount <= 5) {
-                    clickCount.innerHTML = `Come on... just click YES! 🥺 (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `Por favoor, é só dizer que sim! 🥺 (Attempts: ${noClickCount})`;
                 } else if (noClickCount <= 10) {
-                    clickCount.innerHTML = `Please baby! I'm begging you! 😭 (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `Eu imploro meu amorzinho! 😭 (Attempts: ${noClickCount})`;
                 } else {
-                    clickCount.innerHTML = `I can do this all day! 💪❤️ (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `Eu posso fazer isso o dia todo! 💪❤️ (Attempts: ${noClickCount})`;
                 }
                 
                 createHeart();
@@ -431,11 +431,11 @@
             setTimeout(() => mainText.classList.remove('shake'), 500);
 
             if (noClickCount <= 5) {
-                clickCount.innerHTML = `Come on... just click YES! 🥺 (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `Por favoor, é só dizer que sim! 🥺 (Attempts: ${noClickCount})`;
             } else if (noClickCount <= 10) {
-                clickCount.innerHTML = `Please baby! I'm begging you! 😭 (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `Eu imploro meu amorzinho! 😭 (Attempts: ${noClickCount})`;
             } else {
-                clickCount.innerHTML = `I can do this all day! 💪❤️ (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `Eu posso fazer isso o dia todo! 💪❤️ (Attempts: ${noClickCount})`;
             }
 
             createHeart();
@@ -443,10 +443,10 @@
 
         // Handle Yes button click
         yesBtn.addEventListener('click', function() {
-            mainText.innerHTML = "Yay! You forgave me! 😍💖🥳";
+            mainText.innerHTML = "Obaa, vc me perdôou! 😍💖🥳";
             emojiContainer.innerHTML = "😊❤️💃🎉✨🥰💕🌟🎊💖🌹😘";
             emojiContainer.classList.remove('hidden');
-            clickCount.innerHTML = "I LOVE YOU SO MUCH! ❤️❤️❤️";
+            clickCount.innerHTML = "EU TE AMO MUITO! ❤️❤️❤️";
             buttonsContainer.style.display = 'none';
 
             for (let i = 0; i < 30; i++) {
